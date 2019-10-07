@@ -1,5 +1,6 @@
 {
-  "data": [{
+  "data": [
+    {
       "name": "Mama Mocha's Coffee Emporium",
       "state": "Alabama",
       "address": "414 S Gay Street Auburn, AL  36830",
@@ -1774,16 +1775,24 @@
       "state": "Pennsylvania",
       "address": "2400 Lombard Street, Philadelphia, PA 19146",
       "website": "rivalbros.com"
-    }, {
+    },
+    {
       "name": "Carabello Coffee",
       "state": "Kentucky",
       "address": "107 E 9th St. Newport, KY, 41071",
       "website": "carabellocoffee.com"
-    }, {
+    },
+    {
       "name": "Little City Coffee Roasters",
       "state": "Texas",
       "address": "415 E St Elmo Rd #4A, Austin, TX 78745",
       "website": "littlecity.com"
+    },
+    {
+      "name": "Littlefoot Coffee Roasters",
+      "state": "Michigan",
+      "address": "",
+      "website": "littlefootcoffee.com"
     }
   ]
 }
