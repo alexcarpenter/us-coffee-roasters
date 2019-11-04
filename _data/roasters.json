@@ -1,6 +1,5 @@
 {
-  "data": [
-    {
+  "data": [{
       "name": "Mama Mocha's Coffee Emporium",
       "state": "Alabama",
       "address": "414 S Gay Street Auburn, AL  36830",
@@ -1793,6 +1792,12 @@
       "state": "Michigan",
       "address": "",
       "website": "littlefootcoffee.com"
+    },
+    {
+      "name": "Jitters Coffee Bar",
+      "state": "Iowa",
+      "address": "124 4th St SW, Mason City, IA 50401",
+      "website": "jitters-coffee.com"
     }
   ]
 }
