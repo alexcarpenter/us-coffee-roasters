@@ -1,7 +1,7 @@
 {% extends "layouts/default.njk" %}
 
 {% block content %}
-  {% for state, roasters in roasters.data | sort(false,true,"state") | groupby("state") %}
+  {% for state, roasters in roasters | sort(false,true,"state") | groupby("state") %}
   <section class="c-section">
     <h2 class="c-section__heading" id="{{ state | slugify }}"><a href="#{{ state | slugify }}">{{ state }} ({{ roasters.length }})</a></h2>
     <ul class="o-grid">
