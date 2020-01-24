@@ -1797,5 +1797,11 @@
 		"state": "Iowa",
 		"address": "124 4th St SW, Mason City, IA 50401",
 		"website": "jitters-coffee.com"
+	},
+	{
+		"name": "Kestrel Coffee Roasters",
+		"state": "Vermont",
+		"address": "47 Maple Street, Burlington, VT 05401",
+		"website": "kestrelcoffees.com"
 	}
 ]

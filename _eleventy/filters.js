@@ -1,19 +1,20 @@
-const CleanCSS = require('clean-css')
-const UglifyJS = require('uglify-js')
-const slugify = require('@sindresorhus/slugify')
+const CleanCSS = require('clean-css');
+const UglifyJS = require('uglify-js');
+const dayjs = require('dayjs');
+const slugify = require('@sindresorhus/slugify');
 
 module.exports = {
   cssmin: function(code) {
-    return new CleanCSS({}).minify(code).styles
+    return new CleanCSS({}).minify(code).styles;
   },
 
   jsmin: function(code) {
-    let minified = UglifyJS.minify(code)
+    let minified = UglifyJS.minify(code);
     if (minified.error) {
-      console.log('UglifyJS error: ', minified.error)
-      return code
+      console.log('UglifyJS error: ', minified.error);
+      return code;
     }
-    return minified.code
+    return minified.code;
   },
 
   dedupe: function(arr) {
@@ -24,11 +25,15 @@ module.exports = {
       } else {
         return acc;
       }
-    }, [])
-    return uniqueArr
+    }, []);
+    return uniqueArr;
   },
 
   slugify: function(str) {
-    return slugify(str)
-  }
-}
+    return slugify(str);
+  },
+
+  formatDate: function(date) {
+    return dayjs(date).format('MMM D, YYYY');
+  },
+};

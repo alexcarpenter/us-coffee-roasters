@@ -1,0 +1,4 @@
+{
+  "layout": "layouts/interview.njk",
+  "permalink": "interviews/{{ page.fileSlug }}/index.html"
+}

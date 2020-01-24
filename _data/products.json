@@ -1,0 +1,37 @@
+[{
+  "id": 1,
+  "name": "Chemex",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ducimus?",
+  "thumbnail": "/images/chemex.jpg",
+  "link": "https://amzn.to/369HCe1"
+}, {
+  "id": 2,
+  "name": "Kalita Wave 185",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ducimus?",
+  "thumbnail": "/images/kalita-wave-185.png",
+  "link": "https://amzn.to/38jHpqi"
+}, {
+  "id": 3,
+  "name": "Aeropress",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ducimus?",
+  "thumbnail": "/images/aeropress.jpg",
+  "link": "https://amzn.to/37evMAV"
+}, {
+  "id": 4,
+  "name": "Baratza Encore Conical Burr Coffee Grinder",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ducimus?",
+  "thumbnail": "/images/baratza-encore-conical-grinder.jpg",
+  "link": "https://amzn.to/36cyh5s"
+}, {
+  "id": 5,
+  "name": "Boduim Bistro Burr Grinder",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ducimus?",
+  "thumbnail": "https://placeimg.com/300/300",
+  "link": "https://amzn.to/2Gci9pM"
+}, {
+  "id": 6,
+  "name": "Kalita Wave 185 Paper Filters",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ducimus?",
+  "thumbnail": "/images/katlita-wave-185-filters.jpg",
+  "link": "https://amzn.to/2NOPZFs"
+}]
