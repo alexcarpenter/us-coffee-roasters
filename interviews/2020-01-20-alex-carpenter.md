@@ -3,11 +3,9 @@ title: Alex Carpenter
 location: Michigan
 occupation: UI Engineer
 image: '/images/alex-carpenter.jpg'
-avatar: '/images/alex-carpenter-avatar.jpg'
 social:
-  instagram: '/instagram'
+  instagram: 'alexcarp'
   twitter: 'hybrid_alex'
-  facebook: '/twitter'
 products:
   - 1
   - 2
