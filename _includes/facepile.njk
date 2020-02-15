@@ -1,0 +1,11 @@
+{% macro facepile(entries) %}
+<ul class="c-facepile">
+  {% for entry in entries %}
+  <li class="c-facepile__item">
+    <a href="{{ entry.url }}" class="c-avatar">
+      <img src="{{ entry.data.avatar }}" alt="{{ entry.data.title }}">
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}
