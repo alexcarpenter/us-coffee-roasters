@@ -28,6 +28,8 @@ html {
 
 body {
   position: relative;
+  padding-right: 1rem;
+  padding-left: 1rem;
   font-family: var(--font-family);
   background-color: var(--background-color);
   line-height: 1.4;
@@ -102,8 +104,6 @@ mark {
   max-width: 70rem;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
 }
 
 .o-container--md {
@@ -215,6 +215,8 @@ mark {
   background-color: var(--color-blue);
   color: #fff;
   font-size: 1.2rem;
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
   border-radius: 50%;
 }
 
@@ -410,8 +412,8 @@ mark {
 @media (max-width: 768px) {
   .c-meta {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-row-gap: .5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
   }
 }
 
@@ -462,6 +464,13 @@ mark {
   padding-bottom: 4rem;
   text-align: center;
   border-top: 1px solid var(--border-color);
+}
+
+.c-footer small {
+  display: block;
+  margin: 1rem auto 0;
+  max-width: 400px;
+  color: var(--color-gray);
 }
 
 

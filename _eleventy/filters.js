@@ -1,5 +1,5 @@
 const CleanCSS = require('clean-css');
-const UglifyJS = require('uglify-js');
+const Terser = require('terser');
 const dayjs = require('dayjs');
 const slugify = require('@sindresorhus/slugify');
 
@@ -9,9 +9,9 @@ module.exports = {
   },
 
   jsmin: function(code) {
-    let minified = UglifyJS.minify(code);
+    let minified = Terser.minify(code);
     if (minified.error) {
-      console.log('UglifyJS error: ', minified.error);
+      console.log('Terser error: ', minified.error);
       return code;
     }
     return minified.code;

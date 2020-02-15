@@ -19,7 +19,7 @@ module.exports = {
   getProducts: function(ids = []) {
     const filteredProducts = products.filter(x => ids.includes(x.id));
     return `
-        <div class="o-grid" style="--min-column: 250px;">
+        <div class="o-grid" style="--min-column: 220px;">
           ${filteredProducts
             .map(
               item =>
