@@ -6,15 +6,12 @@ permalink: /index.html
 {% block content %}
   {% for state, roasters in roasters | sort(false,true,"state") | groupby("state") %}
   <section class="c-section">
-    <h2 class="c-section__heading" id="{{ state | slugify }}"><a href="#{{ state | slugify }}">{{ state }} ({{ roasters.length }})</a></h2>
+    <h2 class="c-section__heading"><a href="/roasters/{{ state | slugify }}">{{ state }} ({{ roasters.length }})</a></h2>
     <ul class="o-grid">
       {% for roaster in roasters | sort(false, true, 'name') %}
       <li class="o-grid__item">
         <article class="c-card">
-          {# {% if roaster.thumbnail %}
-            <img src="/images/thumbnails/{{ roaster.thumbnail }}" alt="{{ roaster.name }}">
-          {% endif %} #}
-          <h3 class="c-card__heading"><a href="//{{ roaster.website}}">{{ roaster.name }}</a></h3>
+          <h3 class="c-card__heading"><a href="//{{ roaster.website }}">{{ roaster.name }}</a></h3>
           {% if roaster.address %}
           <p class="c-card__address">{{ roaster.address }}</p>
           {% endif %}

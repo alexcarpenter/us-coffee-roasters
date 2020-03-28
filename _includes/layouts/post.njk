@@ -1,0 +1,22 @@
+{% extends "layouts/default.njk" %}
+
+{% block content %}
+  <article class="o-container o-container--md">
+    <header class="c-intro">
+      <time class="c-intro__date">{{ page.date | formatDate }}</time>
+      <h2 class="c-intro__heading">{{ title }}</h2>
+      {% if page.data.banner %}
+      <div class="c-intro__media">
+        <div class="u-breakout">
+          <div class="o-container">
+            <div style="--aspect-ratio: 16/9;"><img src="{{ page.data.banner }}" alt=""></div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </header>
+    <div class="u-stack">
+      {{ content | safe }}
+    </div>
+  </article>
+{% endblock %}

@@ -2,7 +2,7 @@
 
 {% block content %}
   <section class="c-section">
-    <div class="o-container o-container--md">
+    <article class="o-container o-container--md">
       <header class="c-intro">
         <time class="c-intro__date">{{ page.date | formatDate }}</time>
         <h2 class="c-intro__heading">{{ title }}</h2>
@@ -34,7 +34,7 @@
         </dl>
         {{ content | safe }}
       </div>
-    </div>
+    </article>
   </section>
   <section class="c-section">
     <h2 class="c-section__heading u-text-center">Products mentioned</h2>

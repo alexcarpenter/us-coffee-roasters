@@ -227,7 +227,6 @@ mark {
   border: 1px solid var(--color-blue);
   color: #fff;
   font: inherit;
-  border-radius: var(--border-radius);
   transition: all ease-in-out 0.2s;
   cursor: pointer;
   outline: none;
@@ -357,6 +356,12 @@ mark {
   transition: opacity ease-in-out 0.2s;
   z-index: -1;
 }
+
+.c-card:focus-within,
+.c-card:hover {
+  border-color: var(--color-blue);
+}
+
 
 .c-card:focus-within::before,
 .c-card:hover::before {
