@@ -1,3 +1,6 @@
+---
+permalink: /index.html
+---
 {% extends "layouts/default.njk" %}
 
 {% block content %}
@@ -8,6 +11,9 @@
       {% for roaster in roasters | sort(false, true, 'name') %}
       <li class="o-grid__item">
         <article class="c-card">
+          {# {% if roaster.thumbnail %}
+            <img src="/images/thumbnails/{{ roaster.thumbnail }}" alt="{{ roaster.name }}">
+          {% endif %} #}
           <h3 class="c-card__heading"><a href="//{{ roaster.website}}">{{ roaster.name }}</a></h3>
           {% if roaster.address %}
           <p class="c-card__address">{{ roaster.address }}</p>

@@ -1,0 +1,12 @@
+{% extends "layouts/default.njk" %}
+
+{% block intro %}
+  <header class="c-intro">
+    <h1 class="c-intro__heading">{{ title }}</h1>
+    {% if description %}
+      <p class="c-intro__description">{{ description | safe }}</p>
+    {% endif %}
+  </header>
+{% endblock %}
+
+{% block content %}{% endblock %}

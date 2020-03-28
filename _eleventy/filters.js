@@ -36,4 +36,6 @@ module.exports = {
   formatDate: function(date) {
     return dayjs(date).format('MMM D, YYYY');
   },
+
+  sum: arr => arr.reduce((a, b) => a + b, 0)
 };
