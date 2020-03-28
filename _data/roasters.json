@@ -947,12 +947,6 @@
 		"website": "friendsroastery.com"
 	},
 	{
-		"name": "Rising Star Coffee Roasters",
-		"state": "Ohio",
-		"address": "1455 West 29th St, Cleveland, OH, 44113",
-		"website": "risingstarcoffee.com"
-	},
-	{
 		"name": "Phoenix Coffee Company",
 		"state": "Ohio",
 		"address": "1728 St. Clair Ave, Cleveland, OH 44114",
@@ -1694,7 +1688,8 @@
 		"name": "Madcap Coffee Company",
 		"state": "Michigan",
 		"address": "98 Monroe Ctr NW, Grand Rapids, MI 49503",
-		"website": "madcapcoffee.com"
+		"website": "madcapcoffee.com",
+		"thumbnail": "madcap-coffee.jpg"
 	},
 	{
 		"name": "Mountain City Coffee Roasters",
@@ -1803,5 +1798,11 @@
 		"state": "Vermont",
 		"address": "47 Maple Street, Burlington, VT 05401",
 		"website": "kestrelcoffees.com"
+	},
+	{
+		"name": "Prevail Union",
+		"state": "Alabama",
+		"address": "39 Dexter Avenue Suite 102 Montgomery, AL 36104",
+		"website": "prevailunionmgm.com"
 	}
 ]
