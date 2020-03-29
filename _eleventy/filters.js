@@ -17,6 +17,8 @@ module.exports = {
     return minified.code;
   },
 
+  permalink: str => str.replace(/\.html/g, ''),
+
   dedupe: function(arr) {
     const uniqueArr = arr.reduce((acc, index) => {
       const x = acc.find(item => item.state === index.state);

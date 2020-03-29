@@ -1,6 +1,14 @@
 <header class="c-banner" role="banner">
   <div class="c-banner__primary">
-    <span class="c-badge" id="roasters-length">{{ roasters.length }}</span>
+    <div class="c-badge">
+      {% if state %}
+        <svg class="icon icon-state-{{ state | slugify }}">
+          <use xlink:href="#icon-state-{{ state | slugify }}"></use>
+        </svg>
+      {% else %}
+        <span id="roasters-length">{{ roasters.length }}</span>
+      {% endif %}
+    </div>
     <h1 class="c-banner__title"><a href="/">{{ site.title }}</a></h1>
     <p class="c-banner__description">Crowd-sourced list of US coffee roasters</p>
   </div>

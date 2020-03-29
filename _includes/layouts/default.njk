@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>({{ roasters.length }}) - {{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}" />
-  <meta property="og:title" content="({{ roasters.length }}) - {{ site.title }}">
+  <title>{% if title %}{{ title }}{% else %}({{ roasters.length }}){% endif %} - {{ site.title }}</title>
+  <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:title" content="{% if title %}{{ title }}{% else %}({{ roasters.length }}){% endif %} - {{ site.title }}">
   <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:url" content="https://us-coffee-roasters.com">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | permalink }}">
+  <meta name="keywords" content="{% if keywords %}{{ keywords | join(', ') }}, {% endif %}{{ site.keywords | join(', ') }}">
+  <meta name="robots" content="all">
   {% set css %}{% include "app.css" %}{% endset %}
   <style>{{ css | cssmin | safe }}</style>
 </head>

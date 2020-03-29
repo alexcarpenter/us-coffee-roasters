@@ -203,6 +203,7 @@ mark {
 
 
 .c-badge {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -210,11 +211,25 @@ mark {
   width: 60px;
   height: 60px;
   background-color: var(--color-blue);
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+.c-badge span {
   color: #fff;
   font-size: 1.2rem;
   font-feature-settings: "tnum";
   font-variant-numeric: tabular-nums;
-  border-radius: 50%;
+}
+
+.c-badge svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #fff;
+  max-width: 50%;
+  max-height: 50%;
 }
 
 
@@ -284,6 +299,7 @@ mark {
 
 
 .c-intro {
+  position: relative;
   margin-bottom: 2rem;
 }
 

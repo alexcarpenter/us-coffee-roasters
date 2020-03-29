@@ -24,9 +24,15 @@
 ---
 {% extends "layouts/default.njk" %}
 
+{% set title = stateWithRoasters.name %}
+{% set state = title %}
+{% set description = 'List of ' + stateWithRoasters.roasters | length + ' ' + stateWithRoasters.name + ' coffee roasters.' %}
+{% set keywords = [title | lower + ' coffee roasters', title | lower + ' coffee'] %}
+
 {% block content %}
+  {% include "states.svg" %}
   <header class="c-intro">
-    <h2 class="c-intro__heading">{{ stateWithRoasters.name }} coffee roasters</h2>
+    <h2 class="c-intro__heading">{{ stateWithRoasters.name }} Coffee Roasters</h2>
   </header>
 
   <ul class="o-grid">
