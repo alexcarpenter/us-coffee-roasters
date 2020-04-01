@@ -244,6 +244,7 @@ mark {
   font: inherit;
   transition: all ease-in-out 0.2s;
   cursor: pointer;
+  border-radius: var(--border-radius);
   outline: none;
 }
 
