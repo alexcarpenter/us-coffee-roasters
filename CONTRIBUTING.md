@@ -56,8 +56,15 @@ Alabama, Arizona, Arkansas, California, Colorado, Delaware, Florida, Georgia, Id
 Before submitting a pull request, ensure all tests pass:
 
 ```bash
-pnpm test
+pnpm test:all
 ```
+
+This runs validation, linting, and format checks. You can also run them individually:
+
+- `pnpm test` - Validates the data structure
+- `pnpm test:lint` - Checks code style with ESLint
+- `pnpm test:format` - Checks code formatting with Prettier
+- `pnpm format` - Auto-formats code with Prettier
 
 The test suite validates:
 
@@ -68,19 +75,23 @@ The test suite validates:
 - Website URLs are valid
 - No duplicate entries (by name + state)
 - No unexpected fields
+- Code follows linting rules
+- Code is properly formatted
 
 ## Submitting Changes
 
 1. Make your changes to `data.json`
-2. Run `pnpm test` to ensure validation passes
-3. Commit your changes with a clear message
-4. Push to your fork
-5. Open a pull request
+2. Run `pnpm test:all` to ensure all checks pass
+3. If formatting issues are found, run `pnpm format` to auto-fix them
+4. Commit your changes with a clear message
+5. Push to your fork
+6. Open a pull request
 
 ### Pull Request Guidelines
 
 - Keep changes focused on data updates
-- Ensure all tests pass
+- Ensure all tests pass (validation, linting, and formatting)
+- Code will be automatically formatted by Prettier if needed
 - One roaster per commit is preferred for easier review
 
 **Note:** Maintainers will handle updating the changelog and publishing new versions. You don't need to update `CHANGELOG.md` in your PR.
