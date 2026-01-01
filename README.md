@@ -26,14 +26,14 @@ console.log(roasters[0]);
 ### TypeScript
 
 ```typescript
-import roasters, { CoffeeRoaster, USState } from "us-coffee-roasters";
+import roasters, { CoffeeRoaster, State } from "us-coffee-roasters";
 
 const alabamaRoasters: CoffeeRoaster[] = roasters.filter(
   (roaster) => roaster.state === "Alabama"
 );
 
-// USState type provides type safety for state values
-const filterByState = (state: USState) => {
+// State type provides type safety for state values
+const filterByState = (state: State) => {
   return roasters.filter((roaster) => roaster.state === state);
 };
 ```
@@ -43,11 +43,11 @@ const filterByState = (state: USState) => {
 Each roaster object contains:
 
 - `name` (string): The name of the coffee roaster
-- `state` (USState): One of 44 US states where the roaster is located
+- `state` (State): One of 44 US states where the roaster is located
 - `address` (string): The physical address
 - `website` (string): The roaster's website URL
 
-The `USState` type is exported for TypeScript users and provides type safety for state values.
+The `State` type is exported for TypeScript users and provides type safety for state values.
 
 ## License
 

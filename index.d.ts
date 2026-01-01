@@ -1,4 +1,4 @@
-export type USState =
+export type State =
   | "Alabama"
   | "Arizona"
   | "Arkansas"
@@ -46,7 +46,7 @@ export type USState =
 
 export interface CoffeeRoaster {
   name: string;
-  state: USState;
+  state: State;
   address: string;
   website: string;
 }
