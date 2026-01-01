@@ -1,6 +1,6 @@
 # US Coffee Roasters
 
-A comprehensive list of US Coffee Roasters.
+A comprehensive list of US Coffee Roasters. View at [ibrewmyown.coffee](https://ibrewmyown.coffee/roasters).
 
 ## Install
 
@@ -43,7 +43,7 @@ const filterByState = (state: State) => {
 Each roaster object contains:
 
 - `name` (string): The name of the coffee roaster
-- `state` (State): One of 44 US states where the roaster is located
+- `state` (State): US state where the roaster is located
 - `address` (string): The physical address
 - `website` (string): The roaster's website URL
 
