@@ -28,6 +28,7 @@
     "test:lint": "eslint .",
     "test:format": "prettier --check .",
     "format": "prettier --write .",
+    "sort": "node scripts/sort.js",
     "test:all": "pnpm run test && pnpm run test:lint && pnpm run test:format"
   },
   "packageManager": "pnpm@9.0.0",

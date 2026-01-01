@@ -34,8 +34,9 @@ Alabama, Arizona, Arkansas, California, Colorado, Delaware, Florida, Georgia, Id
 
 1. Open `data.json`
 2. Add your roaster entry to the array (alphabetically by state, then by name)
-3. Ensure all required fields are present and valid
-4. Run the validation tests (see below)
+3. Run `pnpm sort` to automatically sort the data (or sort manually)
+4. Ensure all required fields are present and valid
+5. Run the validation tests (see below)
 
 ### Updating an Existing Roaster
 
@@ -65,6 +66,7 @@ This runs validation, linting, and format checks. You can also run them individu
 - `pnpm test:lint` - Checks code style with ESLint
 - `pnpm test:format` - Checks code formatting with Prettier
 - `pnpm format` - Auto-formats code with Prettier
+- `pnpm sort` - Automatically sorts data.json by state, then by name
 
 The test suite validates:
 
