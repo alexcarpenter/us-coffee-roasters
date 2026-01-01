@@ -1,0 +1,32 @@
+{
+  "name": "@alexcarpenter/us-coffee-roasters",
+  "version": "1.0.0",
+  "description": "A comprehensive list of US Coffee Roasters",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "types": "./index.d.ts"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "data.json"
+  ],
+  "keywords": [
+    "coffee",
+    "roasters",
+    "usa",
+    "united-states",
+    "data"
+  ],
+  "scripts": {
+    "test": "node test/validate.js"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "license": "MIT",
+  "repository": "alexcarpenter/us-coffee-roasters"
+}
