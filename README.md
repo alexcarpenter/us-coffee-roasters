@@ -26,9 +26,9 @@ console.log(roasters[0]);
 ### TypeScript
 
 ```typescript
-import roasters, { CoffeeRoaster, State } from "us-coffee-roasters";
+import roasters, { Roaster, State } from "us-coffee-roasters";
 
-const alabamaRoasters: CoffeeRoaster[] = roasters.filter(
+const alabamaRoasters: Roaster[] = roasters.filter(
   (roaster) => roaster.state === "Alabama"
 );
 

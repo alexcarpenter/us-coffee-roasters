@@ -44,13 +44,13 @@ export type State =
   | "Wisconsin"
   | "Wyoming";
 
-export interface CoffeeRoaster {
+export interface Roaster {
   name: string;
   state: State;
   address: string;
   website: string;
 }
 
-declare const roasters: CoffeeRoaster[];
+declare const roasters: Roaster[];
 
 export default roasters;
