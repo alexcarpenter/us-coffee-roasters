@@ -5,13 +5,13 @@ A comprehensive list of US Coffee Roasters.
 ## Install
 
 ```bash
-npm install us-coffee-roasters
+npm install @alexcarpenter/us-coffee-roasters
 ```
 
 ## Usage
 
 ```javascript
-import roasters from "us-coffee-roasters";
+import roasters from "@alexcarpenter/us-coffee-roasters";
 
 console.log(roasters.length); // 319
 console.log(roasters[0]);
@@ -26,7 +26,7 @@ console.log(roasters[0]);
 ### TypeScript
 
 ```typescript
-import roasters, { Roaster, State } from "us-coffee-roasters";
+import roasters, { Roaster, State } from "@alexcarpenter/us-coffee-roasters";
 
 const alabamaRoasters: Roaster[] = roasters.filter(
   (roaster) => roaster.state === "Alabama"
