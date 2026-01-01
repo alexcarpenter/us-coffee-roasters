@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     tags:
-      - "*"
+      - '*'
 permissions:
   contents: write
 jobs:
@@ -39,6 +39,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           name: ${{ github.ref_name }}
-          body: "${{ steps.changelog.outputs.changelog_content }}"
+          body: '${{ steps.changelog.outputs.changelog_content }}'
           draft: false
           prerelease: false

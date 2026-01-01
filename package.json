@@ -24,9 +24,27 @@
     "data"
   ],
   "scripts": {
-    "test": "node test/validate.js"
+    "test": "node test/validate.js",
+    "test:lint": "eslint .",
+    "test:format": "prettier --check .",
+    "format": "prettier --write .",
+    "test:all": "pnpm run test && pnpm run test:lint && pnpm run test:format"
   },
   "packageManager": "pnpm@9.0.0",
   "license": "MIT",
-  "repository": "alexcarpenter/us-coffee-roasters"
+  "repository": "alexcarpenter/us-coffee-roasters",
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.11.0",
+    "prettier": "^3.3.3"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "jsxSingleQuote": false,
+    "quoteProps": "consistent",
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "none"
+  }
 }

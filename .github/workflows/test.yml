@@ -26,4 +26,7 @@ jobs:
         run: pnpm install --ignore-scripts
       - name: Run validation tests
         run: pnpm test
-
+      - name: Run linting
+        run: pnpm run test:lint
+      - name: Check formatting
+        run: pnpm run test:format
